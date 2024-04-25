@@ -5,7 +5,7 @@ import { NavigationMenuBar } from "./navigation-menu";
 
 export default function Navbar() {
   return (
-    <nav className="z-50 top-0 px-6 w-full h-[64px] border-b shadow-sm bg-white flex items-center">
+    <nav className="z-50 top-0 px-6 w-full h-[64px] border-b shadow-sm bg-muted flex items-center">
       <div className="flex items-center">
         <Logo />
       </div>
