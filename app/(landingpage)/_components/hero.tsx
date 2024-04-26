@@ -1,10 +1,12 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { soria } from "@/lib/fonts";
+import { hero } from "@/lib/site";
 import { cn } from "@/lib/utils";
-import { Hammer, Info } from "lucide-react";
+import { Info } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import reactStringReplace from "react-string-replace";
 
 export const heroes = {
   heading: "Provider of Handyman Services\n for repairing technical problem",
@@ -14,22 +16,26 @@ export default function Hero() {
   return (
     <section className="py-[100px]">
       <div className="flex flex-col items-center justify-center py-10 delay-200 duration-1000 animate-in fade-in slide-in-from-top-6">
-        <Badge className="text-lg text-muted font-semibold">
-          <Hammer className="h-6 w-6 mr-2" />
-          #Nge-Fix masalah teknisimu, tanpa batas!
+        <Badge className="flex items-center gap-2 text-lg font-extralight text-zinc-50">
+          Announcing our new products
         </Badge>
         <h1
           className={cn(
-            "lg:text-6xl xl:text-8xl mt-8 tracking-wide font-extrabold text-center text-5xl capitalize",
-            soria.className
+            soria.className,
+            "lg:text-6xl xl:text-8xl mt-8 tracking-wide font-extrabold text-center text-5xl capitalize"
           )}
         >
-          {heroes.heading.split("\n").map((line, index) => (
-            <span
-              key={index}
-              className="word-animation"
-            >
-              {line}
+          {hero.heading.split("\n").map((line, index) => (
+            <span key={index}>
+              {reactStringReplace(line, /\*\*(.*)\*\*/g, (match, i) => (
+                <span
+                  key={i}
+                  className="word-animation"
+                >
+                  {match}
+                </span>
+              ))}
+              <br />
             </span>
           ))}
         </h1>
@@ -44,12 +50,18 @@ export default function Hero() {
           </div>
           <div className="flex flex-col items-center gap-y- gap-x-8">
             <h1 className="text-lg text-center lg:text-3xl font-bold text-neutral-600 max-w-[500px]">
-              Katakan selamat tinggal pada segala masalah perbaikan rumah yang
-              memusingkan! Percayakan kepada para ahli untuk menyelesaikan
-              masalahnya. Tidak perlu repot-repot! Mari kita wujudkan bersama
-              visi perbaikan rumah impianmu!
+              Your Trusted Building Solutions. Get the best service for your
+              home easily in one app.
             </h1>
-            <div className="flex items-center gap-y-3 mt-4">
+            <div className="flex items-center gap-x-2 mt-4">
+              <Button asChild>
+                <Link
+                  href={"/"}
+                  target="_blank"
+                >
+                  Contact us
+                </Link>
+              </Button>
               <Button asChild>
                 <Link
                   href={"https://linktr.ee/fixfinity"}
