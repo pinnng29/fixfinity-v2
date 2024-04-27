@@ -50,13 +50,13 @@ export default function Services() {
             We provide a varitety of services for you, from building a house to
             calculating construction and repair needs.
           </p>
-          <div className="mx-auto p-6 px-4 grid items-center gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mx-auto p-6 px-2 grid items-center gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
             {servicesItem.map((service, i) => (
               <Card
                 key={i}
-                className="min-h-[300px]"
+                className="min-h-[278px]"
               >
-                <CardHeader className="mt-6 flex items-center gap-y-4">
+                <CardHeader className="mt-6 flex items-center justify-center gap-y-4">
                   {service.imgUrl && (
                     <Image
                       src={service.imgUrl}
@@ -65,16 +65,17 @@ export default function Services() {
                       height={70}
                     />
                   )}
-                  <h2 className="text-xl font-semibold">{service.title}</h2>
                 </CardHeader>
-                <CardContent className="text-sm text-muted-foreground text-center">
-                  {service.description}
+                <CardContent className="text-center">
+                  <h2 className="text-lg font-semibold">
+                    {service.title}
+                  </h2>
+                  <p className="text-sm text-muted-foreground">
+                    {service.description}
+                  </p>
                 </CardContent>
               </Card>
             ))}
-          </div>
-          <div className="container mx-auto">
-            <SliderImage />
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { soria } from "@/lib/fonts";
 import { hero } from "@/lib/site";
 import { cn } from "@/lib/utils";
-import { Info } from "lucide-react";
+import { ChevronRight, Info } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import reactStringReplace from "react-string-replace";
@@ -18,6 +18,7 @@ export default function Hero() {
       <div className="flex flex-col items-center justify-center py-10 delay-200 duration-1000 animate-in fade-in slide-in-from-top-6">
         <Badge className="flex items-center gap-2 text-lg font-extralight text-zinc-50">
           Announcing our new products
+          <ChevronRight className="h-5 w-5"/>
         </Badge>
         <h1
           className={cn(

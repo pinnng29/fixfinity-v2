@@ -7,6 +7,10 @@ export const services = {
   heading: "**Our Professional** Services",
 };
 
+export const features = {
+  heading: "Our **Greatest Values**",
+};
+
 export const servicesItem = [
   {
     imgUrl: "/renovasi-rumah.svg",
@@ -53,6 +57,39 @@ export const servicesItem = [
       "Cari tukang harian untuk semua kebutuhan perbaikan.",
   },
 ];
+
+export const featuresItem = [
+  {
+    imgUrl: "/features-image1.png",
+    title: "Easy Order",
+    description : "By using app, it is easy to order services, anytime and anywhere"
+  },
+  {
+    imgUrl: "/features-image2.png",
+    title: "Easy Tracking",
+    description : "Makes it easy to monitor the status of work orders"
+  },
+  {
+    imgUrl: "/features-image3.png",
+    title: "Easy Pay",
+    description : "Easy to make payments with a variety of payment methods"
+  },
+  {
+    imgUrl: "/features-image4.png",
+    title: "Trusted Service",
+    description : "Help to select service providers that have been verified"
+  },
+  {
+    imgUrl: "/features-image5.png",
+    title: "Excellent Service",
+    description : "Ensure service providers give the best quality service to you"
+  },
+  {
+    imgUrl: "/features-image6.png",
+    title: "Guaranteed Service",
+    description : "Guarantee work completion and retention period for each work order"
+  },
+]
 
 
 export const bannerImages = [
