@@ -1,29 +1,22 @@
 "use client";
 
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import * as React from "react";
+import Image from "next/image";
+import reactStringReplace from "react-string-replace";
 import Autoplay from "embla-carousel-autoplay";
-import { services, servicesItem } from "@/lib/site";
+
 import { cn } from "@/lib/utils";
 import { soria } from "@/lib/fonts";
-import reactStringReplace from "react-string-replace";
-import Image from "next/image";
-import SliderImage from "@/components/slider-images";
+import { services, servicesItem } from "@/lib/site";
+
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export default function Services() {
-  const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: false })
-  );
-
   return (
-    <section className="py-12 bg-muted">
+    <section
+      id="services"
+      className="py-12 bg-muted"
+    >
       <div className="container mx-auto delay-300 duration-1000 animate-in fade-in slide-in-from-bottom-7">
         <div className="flex flex-col items-center justify-center space-y-4">
           <h2
@@ -67,9 +60,7 @@ export default function Services() {
                   )}
                 </CardHeader>
                 <CardContent className="text-center">
-                  <h2 className="text-lg font-semibold">
-                    {service.title}
-                  </h2>
+                  <h2 className="text-lg font-semibold">{service.title}</h2>
                   <p className="text-sm text-muted-foreground">
                     {service.description}
                   </p>

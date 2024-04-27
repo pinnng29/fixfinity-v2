@@ -1,15 +1,20 @@
-import SliderImage from "@/components/slider-images";
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { soria } from "@/lib/fonts";
-import { features, featuresItem } from "@/lib/site";
-import { cn } from "@/lib/utils";
 import Image from "next/image";
 import reactStringReplace from "react-string-replace";
 
+import { cn } from "@/lib/utils";
+import { soria } from "@/lib/fonts";
+import { features, featuresItem } from "@/lib/site";
+
+import { Badge } from "@/components/ui/badge";
+import SliderImage from "@/components/slider-images";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+
 export default function Features() {
   return (
-    <section className="py-10 bg-white">
+    <section
+      id="features"
+      className="py-10 bg-white"
+    >
       <div className="container mx-auto">
         <div className="flex items-center justify-center py-4">
           <Badge className="text-zinc-50">Key Features</Badge>

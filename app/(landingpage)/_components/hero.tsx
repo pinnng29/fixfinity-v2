@@ -1,20 +1,21 @@
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { soria } from "@/lib/fonts";
-import { hero } from "@/lib/site";
-import { cn } from "@/lib/utils";
-import { ChevronRight, Info } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+import { ChevronRight, Info } from "lucide-react";
 import reactStringReplace from "react-string-replace";
 
-export const heroes = {
-  heading: "Provider of Handyman Services\n for repairing technical problem",
-};
+import { cn } from "@/lib/utils";
+import { hero } from "@/lib/site";
+import { soria } from "@/lib/fonts";
+
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <section className="py-[100px]">
+    <section
+      id="hero"
+      className="py-[100px]"
+    >
       <div className="flex flex-col items-center justify-center py-10 delay-200 duration-1000 animate-in fade-in slide-in-from-top-6">
         <Badge className="flex items-center gap-2 text-lg font-extralight text-zinc-50">
           Announcing our new products
@@ -55,7 +56,10 @@ export default function Hero() {
               home easily in one app.
             </h1>
             <div className="flex items-center gap-x-2 mt-4">
-              <Button asChild size={'sm'}>
+              <Button
+                asChild
+                size={"sm"}
+              >
                 <Link
                   href={"https://wa.me/6281364664824/"}
                   target="_blank"
@@ -63,7 +67,10 @@ export default function Hero() {
                   Contact us
                 </Link>
               </Button>
-              <Button asChild size={"sm"}>
+              <Button
+                asChild
+                size={"sm"}
+              >
                 <Link
                   href={"https://linktr.ee/fixfinity"}
                   target="_blank"

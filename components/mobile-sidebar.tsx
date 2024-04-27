@@ -6,7 +6,7 @@ import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import { useMobileSidebar } from "@/hooks/use-mobile-sidebar";
-import { NavigationMenuBar } from "./navigation-menu";
+import { NavigationBar } from "./navigation-menu";
 
 export default function MobileSidebar() {
   const onOpen = useMobileSidebar(state => state.onOpen);
@@ -31,7 +31,7 @@ export default function MobileSidebar() {
           side={"right"}
           className="p-2 pt-10"
         >
-          <NavigationMenuBar />
+          <NavigationBar />
         </SheetContent>
       </Sheet>
     </>

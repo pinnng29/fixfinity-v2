@@ -1,7 +1,6 @@
-import ContactButton from "./contact-button";
 import Logo from "./logo";
 import MobileSidebar from "./mobile-sidebar";
-import { NavigationMenuBar } from "./navigation-menu";
+import { NavigationBar } from "./navigation-menu";
 
 export default function Navbar() {
   return (
@@ -12,7 +11,7 @@ export default function Navbar() {
       <div className="ml-auto flex items-center gap-x-2">
         <MobileSidebar />
         <div className="hidden md:flex">
-          <NavigationMenuBar />
+          <NavigationBar />
         </div>
       </div>
     </nav>

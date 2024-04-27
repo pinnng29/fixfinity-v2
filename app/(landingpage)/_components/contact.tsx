@@ -1,14 +1,18 @@
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { soria } from "@/lib/fonts";
-import { contact } from "@/lib/site";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
 import reactStringReplace from "react-string-replace";
 
+import { cn } from "@/lib/utils";
+import { soria } from "@/lib/fonts";
+import { contact } from "@/lib/site";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+
 export default function Contact() {
   return (
-    <section className="mx-auto max-w-xl px-6 py-24 text-center">
+    <section
+      id="contact"
+      className="mx-auto max-w-xl px-6 py-24 text-center"
+    >
       <Badge className="text-zinc-50 mb-4">Why Fixfinity?</Badge>
       <div className="flex flex-col items-center justify-center rounded-xl border border-border p-10 shadow-xl">
         <h2
