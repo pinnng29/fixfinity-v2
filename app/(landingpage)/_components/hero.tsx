@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="flex flex-col items-center justify-center py-10 delay-200 duration-1000 animate-in fade-in slide-in-from-top-6">
         <Badge className="flex items-center gap-2 text-lg font-extralight text-zinc-50">
           Announcing our new products
-          <ChevronRight className="h-5 w-5"/>
+          <ChevronRight className="h-5 w-5" />
         </Badge>
         <h1
           className={cn(
@@ -55,20 +55,20 @@ export default function Hero() {
               home easily in one app.
             </h1>
             <div className="flex items-center gap-x-2 mt-4">
-              <Button asChild>
+              <Button asChild size={'sm'}>
                 <Link
-                  href={"/"}
+                  href={"https://wa.me/6281364664824/"}
                   target="_blank"
                 >
                   Contact us
                 </Link>
               </Button>
-              <Button asChild>
+              <Button asChild size={"sm"}>
                 <Link
                   href={"https://linktr.ee/fixfinity"}
                   target="_blank"
                 >
-                  <Info className="h-5 w-5 mr-1" />
+                  <Info className="h-4 w-4 mr-1" />
                   For more information
                 </Link>
               </Button>

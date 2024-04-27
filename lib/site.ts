@@ -11,6 +11,10 @@ export const features = {
   heading: "Our **Greatest Values**",
 };
 
+export const contact = {
+  heading: "**Get in touch** with us",
+}
+
 export const servicesItem = [
   {
     imgUrl: "/renovasi-rumah.svg",
