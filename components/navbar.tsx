@@ -1,6 +1,6 @@
 import Logo from "./logo";
 import MobileSidebar from "./mobile-sidebar";
-import { NavigationBar } from "./navigation-menu";
+import { NavigationBar } from "./navigation-bar";
 
 export default function Navbar() {
   return (
