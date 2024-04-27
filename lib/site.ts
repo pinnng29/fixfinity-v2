@@ -57,18 +57,15 @@ export const servicesItem = [
 
 export const bannerImages = [
   {
-    imageUrl:
-      "https://images.pexels.com/photos/1093837/pexels-photo-1093837.jpeg",
-    title: "Sayur Segar",
+    imgUrl: "/slider-images1.jpg",
+    title: "Banner 1",
   },
   {
-    imageUrl:
-      "https://images.pexels.com/photos/1367242/pexels-photo-1367242.jpeg",
-    title: "Dikirim Langsung ke Rumahmu",
+    imgUrl: "/slider-images2.jpg",
+    title: "Banner 2",
   },
   {
-    imageUrl:
-      "https://images.pexels.com/photos/219794/pexels-photo-219794.jpeg",
-    title: "Harga Terjangkau",
+    imgUrl: "/slider-images3.jpg",
+    title: "Banner 3",
   },
-];
+]

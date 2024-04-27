@@ -74,7 +74,7 @@ export default function Services() {
             ))}
           </div>
           <div className="container mx-auto">
-            {/* <SliderImage /> */}
+            <SliderImage />
           </div>
         </div>
       </div>
