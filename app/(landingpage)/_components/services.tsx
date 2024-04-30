@@ -19,25 +19,8 @@ export default function Services() {
     >
       <div className="container mx-auto delay-300 duration-1000 animate-in fade-in slide-in-from-bottom-7">
         <div className="flex flex-col items-center justify-center space-y-4">
-          <h2
-            className={cn(
-              "text-3xl font-extrabold tracking-wide sm:text-5xl",
-              soria.className
-            )}
-          >
-            {services.heading.split("\n").map((line, index) => (
-              <span key={index}>
-                {reactStringReplace(line, /\*\*(.*)\*\*/g, (match, i) => (
-                  <span
-                    key={i}
-                    className="word-animation"
-                  >
-                    {match}
-                  </span>
-                ))}
-                <br />
-              </span>
-            ))}
+          <h2 className="text-center font-semibold text-2xl lg:text-4xl capitalize tracking-wide">
+            Our professional services
           </h2>
           <p className="font-extrabold text-muted-foreground text-center">
             We provide a varitety of services for you, from building a house to

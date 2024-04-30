@@ -11,25 +11,25 @@ export default function Footer() {
       </p>
       <nav className="flex gap-x-3">
         <Link
-          href={"/"}
+          href={"https://linktr.ee/fixfinity"}
           target="_blank"
         >
           <SiLinktree />
         </Link>
         <Link
-          href={"/"}
+          href={"https://wa.me/6281364664824/"}
           target="_blank"
         >
           <FaWhatsapp />
         </Link>
         <Link
-          href={"/"}
+          href={"https://www.instagram.com/fixfinity/"}
           target="_blank"
         >
           <FaInstagram />
         </Link>
         <Link
-          href={"/"}
+          href={"https://www.tiktok.com/@fixfinity"}
           target="_blank"
         >
           <FaTiktok />

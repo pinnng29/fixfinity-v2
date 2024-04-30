@@ -15,24 +15,8 @@ export default function Contact() {
     >
       <Badge className="text-zinc-50 mb-4">Why Fixfinity?</Badge>
       <div className="flex flex-col items-center justify-center rounded-xl border border-border p-10 shadow-xl">
-        <h2
-          className={cn(
-            "text-2xl font-semibold tracking-wide sm:text-4xl",
-            soria.className
-          )}
-        >
-          {contact.heading.split("\n").map((line, index) => (
-            <span key={index}>
-              {reactStringReplace(line, /\*\*(.*)\*\*/g, (match, i) => (
-                <span
-                  key={i}
-                  className="word-animation"
-                >
-                  {match}
-                </span>
-              ))}
-            </span>
-          ))}
+        <h2 className="text-center font-semibold text-2xl lg:text-4xl tracking-wide">
+          Get in touch with us
         </h2>
         <p className="mt-4 text-sm text-muted-foreground">
           Don&apos;t fix your house by yourself. You need the experts to do it
@@ -44,7 +28,7 @@ export default function Contact() {
           className="mt-4 rounded-lg"
         >
           <Link
-            href={"/"}
+            href={"https://wa.me/6281364664824/"}
             target="_blank"
           >
             Contact Us

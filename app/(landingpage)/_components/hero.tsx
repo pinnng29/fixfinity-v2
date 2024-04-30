@@ -21,25 +21,8 @@ export default function Hero() {
           Announcing our new products
           <ChevronRight className="h-5 w-5" />
         </Badge>
-        <h1
-          className={cn(
-            soria.className,
-            "lg:text-6xl xl:text-8xl mt-8 tracking-wide font-extrabold text-center text-5xl capitalize"
-          )}
-        >
-          {hero.heading.split("\n").map((line, index) => (
-            <span key={index}>
-              {reactStringReplace(line, /\*\*(.*)\*\*/g, (match, i) => (
-                <span
-                  key={i}
-                  className="word-animation"
-                >
-                  {match}
-                </span>
-              ))}
-              <br />
-            </span>
-          ))}
+        <h1 className="text-center font-semibold text-4xl lg:text-6xl xl:text-7xl mt-6 capitalize tracking-wide">
+          Provider of handyman services for repairing technical problem
         </h1>
         <div className="max-w-[988px] mx-auto flex-1 w-full flex flex-col lg:flex-row items-center justify-center p-4 gap-2">
           <div className="relative  mb-8 lg:mb-0 mt-4">

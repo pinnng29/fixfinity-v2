@@ -24,10 +24,10 @@ export default function SliderImage() {
                 fill
                 className="object-cover object-center rounded-md"
               />
-              <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 rounded-md" />
-              <p className="absolute top-1/2 left-5 font-semibold text-white md:text-xl lg:text-2xl">
+              <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-20 rounded-md" />
+              {/* <p className="absolute top-1/2 left-5 font-semibold text-white md:text-xl lg:text-2xl">
                 {images.title}
-              </p>
+              </p> */}
             </div>
           </CarouselItem>
         ))}

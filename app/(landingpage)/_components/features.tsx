@@ -21,24 +21,8 @@ export default function Features() {
         </div>
         <SliderImage />
         <div className="flex flex-col items-center justify-center mt-16">
-          <h2
-            className={cn(
-              "text-3xl font-extrabold tracking-wide sm:text-5xl",
-              soria.className
-            )}
-          >
-            {features.heading.split("\n").map((line, index) => (
-              <span key={index}>
-                {reactStringReplace(line, /\*\*(.*)\*\*/g, (match, i) => (
-                  <span
-                    key={i}
-                    className="word-animation"
-                  >
-                    {match}
-                  </span>
-                ))}
-              </span>
-            ))}
+          <h2 className="text-center font-semibold text-2xl lg:text-4xl tracking-wide capitalize">
+            Our Greatest Values
           </h2>
           <div className="container mx-auto px-2 p-4 items-center gap-4 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
             {featuresItem.map((item, index) => (
